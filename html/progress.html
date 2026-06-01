@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Sprint - Progress</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-wrap">
+        <a class="logo" href="index.html">English Sprint</a>
+        <button class="nav-toggle">Menu</button>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vocabulary.html">Vocabulary</a></li>
+            <li><a href="grammar.html">Grammar</a></li>
+            <li><a href="reading.html">Reading</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="progress.html">Progress</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="section-title">Progress - Tiến độ học tập</h1>
+        <p class="section-subtitle">Theo dõi kết quả quiz gần đây và đánh giá mức cải thiện.</p>
+        <img class="page-image" src="../images/progress-green.svg" alt="Progress green banner" />
+
+        <div class="stats">
+          <div class="stat">
+            <h4>Số lần làm quiz</h4>
+            <p id="attempts">0</p>
+          </div>
+          <div class="stat">
+            <h4>Điểm cao nhất</h4>
+            <p id="best-score">0%</p>
+          </div>
+          <div class="stat">
+            <h4>Điểm trung bình</h4>
+            <p id="average-score">0%</p>
+          </div>
+        </div>
+
+        <div class="card stack-space">
+          <button id="clear-progress" class="btn outline" type="button">Xóa dữ liệu tiến độ</button>
+        </div>
+
+        <ul id="history-list" class="history-list"></ul>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">English Sprint Demo - Progress</div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/progress.js"></script>
+  </body>
+</html>

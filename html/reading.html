@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Sprint - Reading</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-wrap">
+        <a class="logo" href="index.html">English Sprint</a>
+        <button class="nav-toggle">Menu</button>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vocabulary.html">Vocabulary</a></li>
+            <li><a href="grammar.html">Grammar</a></li>
+            <li><a href="reading.html">Reading</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="progress.html">Progress</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="section-title">Reading Practice</h1>
+        <p class="section-subtitle">Đọc đoạn văn và trả lời 3 câu hỏi bên dưới.</p>
+        <img class="page-image" src="../images/reading-green.svg" alt="Reading green banner" />
+
+        <article class="reading-block">
+          <p>
+            Lan is a second-year university student. She wants to improve her English
+            because she plans to apply for an international internship next year.
+            Every morning, she spends 20 minutes learning vocabulary. In the evening,
+            she watches short English videos and writes down useful expressions.
+            After three months, she feels much more confident when speaking in class.
+          </p>
+        </article>
+
+        <form id="reading-form">
+          <div class="card question">
+            <p>1. Why does Lan want to improve her English?</p>
+            <div class="options">
+              <label><input type="radio" name="r1" value="a" required /> To travel abroad this month</label>
+              <label><input type="radio" name="r1" value="b" /> To apply for an international internship</label>
+              <label><input type="radio" name="r1" value="c" /> To teach English at school</label>
+            </div>
+          </div>
+
+          <div class="card question">
+            <p>2. What does she do in the evening?</p>
+            <div class="options">
+              <label><input type="radio" name="r2" value="a" required /> She reads long novels</label>
+              <label><input type="radio" name="r2" value="b" /> She joins a football team</label>
+              <label><input type="radio" name="r2" value="c" /> She watches videos and notes expressions</label>
+            </div>
+          </div>
+
+          <div class="card question">
+            <p>3. After three months, how does she feel?</p>
+            <div class="options">
+              <label><input type="radio" name="r3" value="a" required /> More confident</label>
+              <label><input type="radio" name="r3" value="b" /> More tired</label>
+              <label><input type="radio" name="r3" value="c" /> No change</label>
+            </div>
+          </div>
+
+          <button class="btn" type="submit">Chấm điểm Reading</button>
+          <div id="reading-result" class="result tight">Kết quả sẽ hiển thị ở đây.</div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">English Sprint Demo - Reading</div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/reading.js"></script>
+  </body>
+</html>

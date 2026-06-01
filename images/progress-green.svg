@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Progress placeholder green">
+  <rect width="1200" height="700" fill="#15803d"/>
+  <rect x="80" y="90" width="1040" height="520" rx="22" fill="#4ade80" opacity="0.5"/>
+  <text x="600" y="365" text-anchor="middle" fill="#f0fdf4" font-size="54" font-family="Segoe UI, Arial, sans-serif" font-weight="700">PROGRESS</text>
+</svg>
