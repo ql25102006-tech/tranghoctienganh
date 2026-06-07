@@ -31,9 +31,14 @@
 
     <main class="section">
       <div class="container">
-        <h1 class="section-title scroll-reveal">Vocabulary - Từ vựng theo chủ đề</h1>
-        <p class="section-subtitle scroll-reveal stagger-1">Bấm vào thẻ để xem nghĩa và ví dụ.</p>
-        <img class="page-image scroll-reveal stagger-1" src="../images/anh_008.jpg" alt="Vocabulary banner" />
+        <div class="page-hero scroll-reveal">
+          <img class="page-hero-image" src="../images/anh_008.jpg" alt="Vocabulary banner" />
+          <div class="page-hero-overlay"></div>
+          <div class="page-hero-content">
+            <h1 class="page-hero-title">Vocabulary</h1>
+            <p class="page-hero-subtitle">Từ vựng theo chủ đề • Bấm vào thẻ để xem nghĩa và ví dụ</p>
+          </div>
+        </div>
 
         <div class="grid-3">
           <article class="card flashcard scroll-reveal stagger-1">
@@ -90,6 +95,26 @@
             </div>
           </article>
         </div>
+
+        <!-- Mini-game ôn tập từ vựng -->
+        <section class="section vocab-game-section scroll-reveal">
+          <div class="card game-card">
+            <div class="game-header">
+              <h2>🎮 Mini-Game: Ghép Từ Vựng</h2>
+              <p>Hãy chọn một từ tiếng Anh và nghĩa tiếng Việt tương ứng để ghép đôi chúng!</p>
+            </div>
+            
+            <div id="game-board" class="game-board">
+              <!-- Thẻ game sẽ được sinh động bằng JS -->
+            </div>
+            
+            <div id="game-congrats" class="game-congrats hidden">
+              <h3>🎉 Tuyệt vời! Bạn đã ghép đúng tất cả các cặp từ!</h3>
+              <p>Trí nhớ của bạn rất tốt, hãy duy trì phong độ nhé.</p>
+              <button id="game-restart-btn" class="btn" type="button">Chơi lại</button>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
 

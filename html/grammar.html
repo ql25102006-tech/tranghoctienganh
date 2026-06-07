@@ -31,9 +31,23 @@
 
     <main class="section">
       <div class="container">
-        <h1 class="section-title scroll-reveal">Grammar - Ngữ pháp trọng tâm</h1>
-        <p class="section-subtitle scroll-reveal stagger-1">Tổng hợp nhanh các cấu trúc hay gặp trong đề thi.</p>
-        <img class="page-image scroll-reveal stagger-1" src="../images/anh_003.jpg" alt="Grammar banner" />
+        <div class="page-hero scroll-reveal">
+          <img class="page-hero-image" src="../images/anh_003.jpg" alt="Grammar banner" />
+          <div class="page-hero-overlay"></div>
+          <div class="page-hero-content">
+            <h1 class="page-hero-title">Grammar</h1>
+            <p class="page-hero-subtitle">Ngữ pháp trọng tâm • Tổng hợp các cấu trúc hay gặp trong đề thi</p>
+          </div>
+        </div>
+
+
+        <!-- Thanh bộ lọc chuyên đề ngữ pháp -->
+        <div class="grammar-filter-bar scroll-reveal stagger-1">
+          <button class="filter-btn active" data-filter="all">Tất cả</button>
+          <button class="filter-btn" data-filter="tenses">Thì thời gian</button>
+          <button class="filter-btn" data-filter="passive">Câu bị động</button>
+          <button class="filter-btn" data-filter="conditionals">Câu điều kiện</button>
+        </div>
 
         <table class="grammar-table scroll-reveal stagger-2">
           <thead>
@@ -44,28 +58,55 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Present Simple</td>
-              <td>S + V(s/es)</td>
+            <tr data-category="tenses" class="show-row">
+              <td><strong>Present Simple</strong><br><span class="grammar-desc">Hiện tại đơn</span></td>
+              <td><code>S + V(s/es)</code></td>
               <td>He studies English every night.</td>
             </tr>
-            <tr>
-              <td>Past Simple</td>
-              <td>S + V2/ed</td>
+            <tr data-category="tenses" class="show-row">
+              <td><strong>Present Continuous</strong><br><span class="grammar-desc">Hiện tại tiếp diễn</span></td>
+              <td><code>S + am/is/are + V-ing</code></td>
+              <td>She is reading a book now.</td>
+            </tr>
+            <tr data-category="tenses" class="show-row">
+              <td><strong>Present Perfect</strong><br><span class="grammar-desc">Hiện tại hoàn thành</span></td>
+              <td><code>S + have/has + V3/ed</code></td>
+              <td>I have lived here for five years.</td>
+            </tr>
+            <tr data-category="tenses" class="show-row">
+              <td><strong>Past Simple</strong><br><span class="grammar-desc">Quá khứ đơn</span></td>
+              <td><code>S + V2/ed</code></td>
               <td>They visited Da Nang last summer.</td>
             </tr>
-            <tr>
-              <td>Passive Voice</td>
-              <td>S + be + V3/ed</td>
+            <tr data-category="passive" class="show-row">
+              <td><strong>Passive Voice (Present Simple)</strong><br><span class="grammar-desc">Bị động Hiện tại đơn</span></td>
+              <td><code>S + am/is/are + V3/ed</code></td>
+              <td>This room is cleaned every day.</td>
+            </tr>
+            <tr data-category="passive" class="show-row">
+              <td><strong>Passive Voice (Past Simple)</strong><br><span class="grammar-desc">Bị động Quá khứ đơn</span></td>
+              <td><code>S + was/were + V3/ed</code></td>
               <td>The letter was sent yesterday.</td>
             </tr>
-            <tr>
-              <td>Conditional Type 1</td>
-              <td>If + S + V, S + will + V</td>
+            <tr data-category="conditionals" class="show-row">
+              <td><strong>Conditional Type 1</strong><br><span class="grammar-desc">Điều kiện loại 1 (Có thật ở hiện tại/tương lai)</span></td>
+              <td><code>If + S + V(HTĐ), S + will + V</code></td>
               <td>If you practice, you will improve.</td>
+            </tr>
+            <tr data-category="conditionals" class="show-row">
+              <td><strong>Conditional Type 2</strong><br><span class="grammar-desc">Điều kiện loại 2 (Trái thực tế ở hiện tại)</span></td>
+              <td><code>If + S + V2/ed, S + would + V</code></td>
+              <td>If I were you, I would buy that car.</td>
+            </tr>
+            <tr data-category="conditionals" class="show-row">
+              <td><strong>Conditional Type 3</strong><br><span class="grammar-desc">Điều kiện loại 3 (Trái thực tế ở quá khứ)</span></td>
+              <td><code>If + S + had + V3/ed, S + would have + V3/ed</code></td>
+              <td>If he had studied, he would have passed.</td>
             </tr>
           </tbody>
         </table>
+
+
 
         <section class="section">
           <h2 class="section-title scroll-reveal">Mẹo làm bài nhanh</h2>
@@ -123,5 +164,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/grammar.js"></script>
   </body>
 </html>

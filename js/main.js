@@ -51,4 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     revealElements.forEach(el => observer.observe(el));
   }
+
+  // FAQ Accordion Toggle
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const button = item.querySelector('.faq-question');
+    if (button) {
+      button.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        
+        // Đóng các câu hỏi khác (accordion style)
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('open');
+        });
+        
+        // Mở câu hỏi hiện tại nếu trước đó chưa mở
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    }
+  });
 });
