@@ -1150,5 +1150,18 @@ button.btn:hover {
   font-size: 14px;
 }
 
+/* ==========================================================================
+   Footer SVG Icon Styles
+   ========================================================================== */
+.contact-svg-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+  stroke-width: 2.2px;
+}
+
+.social-icon svg {
+  display: block;
+}
+
 
 
