@@ -8,13 +8,6 @@ if (navToggle && mainNav) {
   });
 }
 
-const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.main-nav a').forEach((link) => {
-  const href = link.getAttribute('href');
-  if (href === currentPath) {
-    link.classList.add('active');
-  }
-});
 
 document.querySelectorAll('.flashcard').forEach((card) => {
   card.addEventListener('click', () => {
