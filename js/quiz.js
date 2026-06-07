@@ -45,7 +45,7 @@ function renderQuiz() {
         .join('');
 
       return `
-        <div class="card question">
+        <div class="card question scroll-reveal stagger-${(qIndex % 3) + 1}">
           <p>${qIndex + 1}. ${q.question}</p>
           <div class="options">${optionsHtml}</div>
         </div>

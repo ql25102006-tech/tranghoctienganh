@@ -91,16 +91,24 @@ function initVocabulary() {
     badge.textContent = '✓ Đã thuộc';
     card.appendChild(badge);
 
-    // Thêm nút đánh dấu vào cuối card (sau div.answer)
+    // Tạo nút đánh dấu
     const button = document.createElement('button');
     button.className = 'btn outline learn-btn';
     button.textContent = learned.includes(word) ? 'Bỏ học thuộc' : 'Đánh dấu đã học';
 
+    // Thêm gợi ý "Click để xem nghĩa"
+    const hint = document.createElement('span');
+    hint.className = 'click-hint';
+    hint.textContent = '💡 Click để xem nghĩa';
+
     const answerDiv = card.querySelector('.answer');
     if (answerDiv) {
+      // Chèn gợi ý trước phần nghĩa
+      card.insertBefore(hint, answerDiv);
       // Chèn nút vào sau div answer để dễ bấm
       answerDiv.parentNode.insertBefore(button, answerDiv.nextSibling);
     } else {
+      card.appendChild(hint);
       card.appendChild(button);
     }
 

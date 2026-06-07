@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Sprint - Progress</title>
+    <link rel="shortcut icon" href="../ico/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../ico/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../ico/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../ico/favicon-16x16.png" />
+    <link rel="manifest" href="../ico/site.webmanifest" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-wrap">
-        <a class="logo" href="../index.html">English Daily</a>
+        <a class="logo" href="../index.html">English Sprint</a>
         <button class="nav-toggle">Menu</button>
         <nav class="main-nav">
           <ul>
@@ -26,30 +31,30 @@
 
     <main class="section">
       <div class="container">
-        <h1 class="section-title">Progress - Tiến độ học tập</h1>
-        <p class="section-subtitle">Theo dõi kết quả quiz gần đây và đánh giá mức cải thiện.</p>
-        <img class="page-image" src="../images/anh_006.jpg" alt="Progress banner" />
+        <h1 class="section-title scroll-reveal">Progress - Tiến độ học tập</h1>
+        <p class="section-subtitle scroll-reveal stagger-1">Theo dõi kết quả quiz gần đây và đánh giá mức cải thiện.</p>
+        <img class="page-image scroll-reveal stagger-1" src="../images/anh_019.jpg" alt="Progress banner" />
 
         <div class="stats">
-          <div class="stat">
+          <div class="stat scroll-reveal stagger-1">
             <h4>Số lần làm quiz</h4>
             <p id="attempts">0</p>
           </div>
-          <div class="stat">
+          <div class="stat scroll-reveal stagger-2">
             <h4>Điểm cao nhất</h4>
             <p id="best-score">0%</p>
           </div>
-          <div class="stat">
+          <div class="stat scroll-reveal stagger-3">
             <h4>Điểm trung bình</h4>
             <p id="average-score">0%</p>
           </div>
         </div>
 
-        <div class="card stack-space">
+        <div class="card stack-space scroll-reveal stagger-1">
           <button id="clear-progress" class="btn outline" type="button">Xóa dữ liệu tiến độ</button>
         </div>
 
-        <ul id="history-list" class="history-list"></ul>
+        <ul id="history-list" class="history-list scroll-reveal stagger-2"></ul>
       </div>
     </main>
 
